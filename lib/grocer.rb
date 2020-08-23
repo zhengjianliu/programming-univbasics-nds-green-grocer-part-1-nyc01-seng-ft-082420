@@ -33,7 +33,9 @@ def consolidate_cart(cart)
          final[:count]+=1
        end
        }
-       
+       else
+      item[:count] = 1
+      final.push(grocery_item)
      end
   
   }
