@@ -26,7 +26,8 @@ def consolidate_cart(cart)
   
   final = []
   cart.each_with_index { |item,index|
-    
+     scan_item = find_item_by_name_in_collection(item[:item],final)
+     if scan_item
   
   }
   
