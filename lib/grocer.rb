@@ -26,7 +26,7 @@ def consolidate_cart(cart)
   
   final = []
   cart.each_with_index { |item,index|
-  
+    
   
   }
   
