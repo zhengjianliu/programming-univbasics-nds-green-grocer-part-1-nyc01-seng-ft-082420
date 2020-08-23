@@ -24,7 +24,7 @@ def consolidate_cart(cart)
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   
-  index = 0
+
   new_cart = []
   
   cart.each do |grocery_item|
@@ -41,7 +41,6 @@ def consolidate_cart(cart)
       grocery_item[:count] = 1
       new_cart << grocery_item
     end
-    index += 1
   end
   new_cart
 end
