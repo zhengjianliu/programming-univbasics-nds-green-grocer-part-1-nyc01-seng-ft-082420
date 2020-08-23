@@ -25,7 +25,7 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   new_cart = []
   cart.each do |item|
-    current_item = find_item_by_name_in_collection(grocery_item[:item], new_cart)
+    current_item = find_item_by_name_in_collection(item[:item], new_cart)
     if current_item
       new_cart.each do |new_cart_item|
         if new_cart_item[:item] == current_item[:item]
@@ -33,8 +33,8 @@ def consolidate_cart(cart)
         end
       end
     else
-      grocery_item[:count] = 1
-      new_cart << grocery_item
+      item[:count] = 1
+      new_cart << item
     end
   end
   new_cart
