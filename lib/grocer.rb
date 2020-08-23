@@ -33,6 +33,7 @@ def consolidate_cart(cart)
          final[:count]+=1
        end
        }
+       
      end
   
   }
