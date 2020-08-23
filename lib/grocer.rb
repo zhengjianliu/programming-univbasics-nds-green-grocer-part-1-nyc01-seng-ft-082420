@@ -32,7 +32,7 @@ def consolidate_cart(cart)
        if final[:item] == scan_item[:item]
          final[:count]+=1
        end
-       bew
+       
        }
      end
   
