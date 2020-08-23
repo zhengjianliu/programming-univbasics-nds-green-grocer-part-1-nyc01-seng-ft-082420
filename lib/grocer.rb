@@ -28,6 +28,13 @@ def consolidate_cart(cart)
   cart.each_with_index { |item,index|
      scan_item = find_item_by_name_in_collection(item[:item],final)
      if scan_item
+       final.each_with_index {|final, count|
+       if final[:item] == scan_itemp[:item]
+         final 
+       end
+          
+       }
+     end
   
   }
   
