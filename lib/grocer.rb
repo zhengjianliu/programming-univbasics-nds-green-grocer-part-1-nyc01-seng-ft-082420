@@ -29,10 +29,10 @@ def consolidate_cart(cart)
      scan_item = find_item_by_name_in_collection(item[:item],final)
      if scan_item
        final.each_with_index {|final, count|
-       if final[:item] == scan_itemp[:item]
-         final 
+       if final[:item] == scan_item[:item]
+         final[:count]+=1
        end
-          
+       bew
        }
      end
   
