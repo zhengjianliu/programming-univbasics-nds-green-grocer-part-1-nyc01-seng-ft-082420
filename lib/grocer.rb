@@ -37,7 +37,7 @@ def consolidate_cart(cart)
       new_cart.push(item)
     end
   end
-  new_cart
+  return new_cart
 end
 
 
